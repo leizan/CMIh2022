@@ -26,21 +26,18 @@ getCat = function(name){
 }
 
 
-# functionList = c(Chain_a1, Chain_a2, Chain_b, Chain_c1, Chain_c2, Chain_d,
-#                   
-#                 Fork_a1, Fork_a2, Fork_b, Fork_c1, Fork_c2, Fork_d,
-#                  
-#                  Collider_a1, Collider_a2, Collider_b, Collider_c1, Collider_c2, Collider_d)
-# 
-# nameExper = c("Chain_a1", "Chain_a2", "Chain_b", "Chain_c1", "Chain_c2", "Chain_d",
-#               
-#               "Fork_a1", "Fork_a2", "Fork_b", "Fork_c1", "Fork_c2", "Fork_d",
-#               
-#               "Collider_a1", "Collider_a2", "Collider_b", "Collider_c1", "Collider_c2", "Collider_d")
+functionList = c(Chain_a1, Chain_a2, Chain_b, Chain_c1, Chain_c2, Chain_d,
+                  
+                Fork_a1, Fork_a2, Fork_b, Fork_c1, Fork_c2, Fork_d,
+                 
+                 Collider_a1, Collider_a2, Collider_b, Collider_c1, Collider_c2, Collider_d)
 
-functionList = c(Collider_c1, Collider_c2)
+nameExper = c("Chain_a1", "Chain_a2", "Chain_b", "Chain_c1", "Chain_c2", "Chain_d",
+              
+              "Fork_a1", "Fork_a2", "Fork_b", "Fork_c1", "Fork_c2", "Fork_d",
+              
+              "Collider_a1", "Collider_a2", "Collider_b", "Collider_c1", "Collider_c2", "Collider_d")
 
-nameExper = c("Collider_c1", "Collider_c2")
 
 indice  = 1
 xind = c(1)
