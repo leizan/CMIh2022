@@ -9,11 +9,11 @@ Methods:
 Experiments:
 The 'experiments' folder contains:
 - syntheticGenerator.R generates ground-truth data for CMI estimators;
-- test_distrib.R evaluates CMI estimators on ground-truth data (Figure 1);
-- test_distrib_multidim.R evaluates CMI estimators on ground-truth data (Figure 2);
+- test_distrib.R evaluates CMI estimators on ground-truth data (Figure 1 & Figure 2(middle, right));
+- test_distrib_multidim.R evaluates CMI estimators on ground-truth data (Figure 2(left) & Table 1);
 - data.R generates synthetic data for the conditional independent test;
-- testSyn.R evaluates different test methods on synthetic data(Table 1);
-- testReal.R evaluates different test methods on real data(Table 2).
+- testSyn.R evaluates different test methods on synthetic data(Table 2);
+- testReal.R evaluates different test methods on real data(Table 3).
 
 To run the experiments, stay in this folder CMIh2022/ with your console and run, e.g.,
 Rscript experiments/test_distrib.R
