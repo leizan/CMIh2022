@@ -1,0 +1,19 @@
+CMIh_local_001	CMIh_local_005	CMIh_local_const_001	CMIh_local_const_005	CMIh_global_001	CMIh_global_005	MS_local_001	MS_local_005	MS_local_const_001	MS_local_const_005	MS_global_001	MS_global_005
+Chain_a1	1	1	1	1	0	0	1	1	1	1	1	1
+Chain_a2	1	1	1	1	0	0	1	0.9	1	0.9	0	0
+Chain_b	1	0.8	0.9	0.8	0.9	0.9	1	1	1	1	1	1
+Chain_c1	1	1	1	0.9	1	1	1	1	1	1	1	1
+Chain_c2	0	0	0.9	0.4	0	0	0	0	0.4	0.2	0	0
+Chain_d	1	0.9	1	0.9	1	1	1	1	1	1	1	1
+Fork_a1	1	1	1	1	0	0	1	1	1	1	1	1
+Fork_a2	1	1	1	1	0	0	1	0.9	1	0.9	0	0
+Fork_b	1	1	1	1	1	1	1	1	1	1	1	1
+Fork_c1	1	1	1	0.8	1	1	1	1	1	1	1	1
+Fork_c2	0	0	0.9	0.7	0	0	0	0	0.7	0.3	0	0
+Fork_d	1	1	1	1	1	1	1	0.8	1	0.8	1	1
+Collider_a1	1	1	1	1	1	1	0	0	0	0	0	0
+Collider_a2	1	1	1	1	0.8	0.8	1	1	1	1	1	1
+Collider_b	1	1	1	1	1	1	0	0	0	0	0	0
+Collider_c1	0	0	0.4	0.7	0	0	0	0	0	0	0	0
+Collider_c2	0.8	1	1	1	0.4	0.7	0	0.1	0	0	0	0
+Collider_d	1	1	1	1	1	1	0.9	1	0.9	1	0.4	0.8
