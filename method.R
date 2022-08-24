@@ -357,12 +357,37 @@ globalPermuTest_MS = function(dd, xind, yind, zinds, isCat, B=2, kPer=7, k=k){
   }
   
   I_original = KNN.CMI_estimates_MS(data=dd, xind=xind, yind=yind, zinds=zinds, isCat=isCat, k=k)
+
   
   estimatesKnn = foreach(l = 1:B, .combine=rbind, .packages = c('parallelDist','qlcMatrix','dplyr','MASS')) %dopar% {
     source("MS-R.R")
     data = dd
     data[[1]] = sample(dd[[1]])
     KNN.CMI_estimates_MS(data=data, xind=xind, yind=yind, zinds=zinds, isCat=isCat, k=k)
+  }
+  pValue = length(which(estimatesKnn[,1] >= I_original))/B
+  return(pValue)
+}
+
+# MS without condition
+globalPermuTest_MS_without_condition = function(dd, xind, yind, zinds, isCat, B=2, kPer=7, k=k){
+  
+  total = dim(dd)[1]
+  dimNum = dim(dd)[2]
+  for(d in 1:dimNum){
+    if(!(d %in% isCat)){
+      dd[[d]] = rank(dd[[d]],ties.method = c("first"))
+    }
+  }
+  
+  I_original = KNN.MI_estimates_MS(data=dd, xind=xind, yind=yind, isCat=isCat, k=k)
+  
+  
+  estimatesKnn = foreach(l = 1:B, .combine=rbind, .packages = c('parallelDist','qlcMatrix','dplyr','MASS')) %dopar% {
+    source("MS-R.R")
+    data = dd
+    data[[1]] = sample(dd[[1]])
+    KNN.MI_estimates_MS(data=data, xind=xind, yind=yind, isCat=isCat, k=k)
   }
   pValue = length(which(estimatesKnn[,1] >= I_original))/B
   return(pValue)
