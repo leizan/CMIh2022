@@ -13,7 +13,9 @@ The 'experiments' folder contains:
 - test_distrib_multidim.R evaluates CMI estimators on ground-truth data (Figure 2(left) & Table 1);
 - data.R generates synthetic data for the conditional independent test;
 - testSyn.R evaluates different test methods on synthetic data(Table 2);
-- testReal.R evaluates different test methods on real data(Table 3).
+- testTemperature.R evaluates different test methods on perprocessed DWD dataset(Table 3);
+- testADHD.R evaluates different test methods on ADHD-200 dataset(Table 4);
+- testReal.R evaluates different test methods on EasyVista dataset(Table 5).
 
 To run the experiments, stay in this folder CMIh2022/ with your console and run, e.g.,
 Rscript experiments/test_distrib.R
