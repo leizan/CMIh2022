@@ -21,10 +21,13 @@ The 'experiments' folder contains:
 - testADHD.R evaluates different test methods on ADHD-200 dataset(Table 4);
 - testReal.R evaluates different test methods on EasyVista dataset(Table 5).
 
-To run the experiments, stay in this folder CMIh2022/ with your console and run:
+###
+1. To run the experiments, stay in this folder CMIh2022/ with your console and run:
 ```bash
 Rscript experiments/test_distrib.R
 ```
-The real data for the conditional independent test is in folder 'ordinal_data'. The results will be stored into the 'results' folder and the p-Value for the independent test on real data will be stored into the 'pValue' folder. You may also need to install additional R packages (see requirements in 'source.R') 
+2. The real data for the conditional independent test is in folder 'ordinal_data'. The results will be stored into the 'results' folder and the p-Value for the independent test on real data will be stored into the 'pValue' folder. 
 
+3. You may also need to install additional R packages (see requirements in 'source.R') 
 
+4. The python code is in the folder _python_code_.
