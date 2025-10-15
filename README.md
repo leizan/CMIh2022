@@ -3,7 +3,7 @@
 The code provided in this package supports the research paper below:
 Zan, Lei, Anouar Meynaoui, Charles K. Assaad, Emilie Devijver, and Eric Gaussier. 2022. "A Conditional Mutual Information Estimator for Mixed Data and an Associated Conditional Independence Test" Entropy 24, no. 9: 1234. https://doi.org/10.3390/e24091234
 
-## Note
+## Note:
 
 This method has also been implemented in the **Tigramite** library — a powerful toolkit for causal discovery in time series.
 Special thanks to the Tigramite team for their excellent work and contribution.
